@@ -111,74 +111,74 @@
             this.panelBaglanti.Controls.Add(this.cmbBaudRate);
             this.panelBaglanti.Controls.Add(this.btnBaglan);
             this.panelBaglanti.Controls.Add(this.lblBaglantiDurum);
-            this.panelBaglanti.Location = new System.Drawing.Point(20, 100);
+            this.panelBaglanti.Location = new System.Drawing.Point(20, 90);
             this.panelBaglanti.Name = "panelBaglanti";
-            this.panelBaglanti.Size = new System.Drawing.Size(320, 280);
+            this.panelBaglanti.Size = new System.Drawing.Size(300, 230);
             this.panelBaglanti.TabIndex = 1;
             // 
             // lblBaglantiBaslik
             // 
             this.lblBaglantiBaslik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
             this.lblBaglantiBaslik.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblBaglantiBaslik.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBaglantiBaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblBaglantiBaslik.ForeColor = System.Drawing.Color.White;
             this.lblBaglantiBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblBaglantiBaslik.Name = "lblBaglantiBaslik";
             this.lblBaglantiBaslik.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lblBaglantiBaslik.Size = new System.Drawing.Size(318, 45);
+            this.lblBaglantiBaslik.Size = new System.Drawing.Size(298, 35);
             this.lblBaglantiBaslik.TabIndex = 0;
-            this.lblBaglantiBaslik.Text = "BAĞLANTI AYARLARI";
+            this.lblBaglantiBaslik.Text = "BAĞLANTI";
             this.lblBaglantiBaslik.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblComPort
             // 
             this.lblComPort.AutoSize = true;
-            this.lblComPort.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblComPort.Location = new System.Drawing.Point(20, 65);
+            this.lblComPort.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblComPort.Location = new System.Drawing.Point(15, 50);
             this.lblComPort.Name = "lblComPort";
-            this.lblComPort.Size = new System.Drawing.Size(82, 20);
+            this.lblComPort.Size = new System.Drawing.Size(42, 19);
             this.lblComPort.TabIndex = 1;
-            this.lblComPort.Text = "COM Port:";
+            this.lblComPort.Text = "Port:";
             // 
             // cmbComPort
             // 
             this.cmbComPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbComPort.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbComPort.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbComPort.FormattingEnabled = true;
-            this.cmbComPort.Location = new System.Drawing.Point(130, 63);
+            this.cmbComPort.Location = new System.Drawing.Point(100, 48);
             this.cmbComPort.Name = "cmbComPort";
-            this.cmbComPort.Size = new System.Drawing.Size(160, 25);
+            this.cmbComPort.Size = new System.Drawing.Size(180, 23);
             this.cmbComPort.TabIndex = 2;
             // 
             // lblBaudRate
             // 
             this.lblBaudRate.AutoSize = true;
-            this.lblBaudRate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBaudRate.Location = new System.Drawing.Point(20, 105);
+            this.lblBaudRate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBaudRate.Location = new System.Drawing.Point(15, 80);
             this.lblBaudRate.Name = "lblBaudRate";
-            this.lblBaudRate.Size = new System.Drawing.Size(85, 20);
+            this.lblBaudRate.Size = new System.Drawing.Size(42, 19);
             this.lblBaudRate.TabIndex = 3;
-            this.lblBaudRate.Text = "Baud Rate:";
+            this.lblBaudRate.Text = "Baud:";
             // 
             // cmbBaudRate
             // 
             this.cmbBaudRate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBaudRate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbBaudRate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbBaudRate.FormattingEnabled = true;
-            this.cmbBaudRate.Location = new System.Drawing.Point(130, 103);
+            this.cmbBaudRate.Location = new System.Drawing.Point(100, 78);
             this.cmbBaudRate.Name = "cmbBaudRate";
-            this.cmbBaudRate.Size = new System.Drawing.Size(160, 25);
+            this.cmbBaudRate.Size = new System.Drawing.Size(180, 23);
             this.cmbBaudRate.TabIndex = 4;
             // 
             // btnBaglan
             // 
             this.btnBaglan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
             this.btnBaglan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaglan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBaglan.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBaglan.ForeColor = System.Drawing.Color.White;
-            this.btnBaglan.Location = new System.Drawing.Point(24, 150);
+            this.btnBaglan.Location = new System.Drawing.Point(15, 115);
             this.btnBaglan.Name = "btnBaglan";
-            this.btnBaglan.Size = new System.Drawing.Size(266, 45);
+            this.btnBaglan.Size = new System.Drawing.Size(265, 35);
             this.btnBaglan.TabIndex = 5;
             this.btnBaglan.Text = "BAĞLAN";
             this.btnBaglan.UseVisualStyleBackColor = false;
@@ -186,11 +186,11 @@
             // 
             // lblBaglantiDurum
             // 
-            this.lblBaglantiDurum.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBaglantiDurum.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblBaglantiDurum.ForeColor = System.Drawing.Color.Red;
-            this.lblBaglantiDurum.Location = new System.Drawing.Point(24, 215);
+            this.lblBaglantiDurum.Location = new System.Drawing.Point(15, 165);
             this.lblBaglantiDurum.Name = "lblBaglantiDurum";
-            this.lblBaglantiDurum.Size = new System.Drawing.Size(266, 40);
+            this.lblBaglantiDurum.Size = new System.Drawing.Size(265, 30);
             this.lblBaglantiDurum.TabIndex = 6;
             this.lblBaglantiDurum.Text = "BAĞLI DEĞİL";
             this.lblBaglantiDurum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,21 +209,21 @@
             this.panelVeriler.Controls.Add(this.lblGucBaslik);
             this.panelVeriler.Controls.Add(this.lblAnlikGuc);
             this.panelVeriler.Controls.Add(this.progressGuc);
-            this.panelVeriler.Location = new System.Drawing.Point(360, 100);
+            this.panelVeriler.Location = new System.Drawing.Point(330, 90);
             this.panelVeriler.Name = "panelVeriler";
-            this.panelVeriler.Size = new System.Drawing.Size(420, 280);
+            this.panelVeriler.Size = new System.Drawing.Size(400, 230);
             this.panelVeriler.TabIndex = 2;
             // 
             // lblVerilerBaslik
             // 
             this.lblVerilerBaslik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
             this.lblVerilerBaslik.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblVerilerBaslik.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblVerilerBaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblVerilerBaslik.ForeColor = System.Drawing.Color.White;
             this.lblVerilerBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblVerilerBaslik.Name = "lblVerilerBaslik";
             this.lblVerilerBaslik.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lblVerilerBaslik.Size = new System.Drawing.Size(418, 45);
+            this.lblVerilerBaslik.Size = new System.Drawing.Size(398, 35);
             this.lblVerilerBaslik.TabIndex = 0;
             this.lblVerilerBaslik.Text = "ANLIK VERİLER";
             this.lblVerilerBaslik.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,85 +231,85 @@
             // lblRuzgarBaslik
             // 
             this.lblRuzgarBaslik.AutoSize = true;
-            this.lblRuzgarBaslik.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblRuzgarBaslik.Location = new System.Drawing.Point(20, 60);
+            this.lblRuzgarBaslik.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRuzgarBaslik.Location = new System.Drawing.Point(15, 45);
             this.lblRuzgarBaslik.Name = "lblRuzgarBaslik";
-            this.lblRuzgarBaslik.Size = new System.Drawing.Size(96, 20);
+            this.lblRuzgarBaslik.Size = new System.Drawing.Size(90, 19);
             this.lblRuzgarBaslik.TabIndex = 1;
             this.lblRuzgarBaslik.Text = "Rüzgar Hızı:";
             // 
             // lblRuzgarHizi
             // 
-            this.lblRuzgarHizi.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRuzgarHizi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblRuzgarHizi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.lblRuzgarHizi.Location = new System.Drawing.Point(230, 55);
+            this.lblRuzgarHizi.Location = new System.Drawing.Point(250, 42);
             this.lblRuzgarHizi.Name = "lblRuzgarHizi";
-            this.lblRuzgarHizi.Size = new System.Drawing.Size(170, 30);
+            this.lblRuzgarHizi.Size = new System.Drawing.Size(130, 25);
             this.lblRuzgarHizi.TabIndex = 2;
             this.lblRuzgarHizi.Text = "0.00 m/s";
             this.lblRuzgarHizi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // progressRuzgar
             // 
-            this.progressRuzgar.Location = new System.Drawing.Point(24, 90);
+            this.progressRuzgar.Location = new System.Drawing.Point(19, 70);
             this.progressRuzgar.Name = "progressRuzgar";
-            this.progressRuzgar.Size = new System.Drawing.Size(376, 23);
+            this.progressRuzgar.Size = new System.Drawing.Size(361, 15);
             this.progressRuzgar.TabIndex = 3;
             // 
             // lblGuvenlikBaslik
             // 
             this.lblGuvenlikBaslik.AutoSize = true;
-            this.lblGuvenlikBaslik.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblGuvenlikBaslik.Location = new System.Drawing.Point(20, 130);
+            this.lblGuvenlikBaslik.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGuvenlikBaslik.Location = new System.Drawing.Point(15, 100);
             this.lblGuvenlikBaslik.Name = "lblGuvenlikBaslik";
-            this.lblGuvenlikBaslik.Size = new System.Drawing.Size(124, 20);
+            this.lblGuvenlikBaslik.Size = new System.Drawing.Size(113, 19);
             this.lblGuvenlikBaslik.TabIndex = 4;
             this.lblGuvenlikBaslik.Text = "Güvenlik Oranı:";
             // 
             // lblGuvenlik
             // 
-            this.lblGuvenlik.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGuvenlik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblGuvenlik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.lblGuvenlik.Location = new System.Drawing.Point(230, 125);
+            this.lblGuvenlik.Location = new System.Drawing.Point(250, 97);
             this.lblGuvenlik.Name = "lblGuvenlik";
-            this.lblGuvenlik.Size = new System.Drawing.Size(170, 30);
+            this.lblGuvenlik.Size = new System.Drawing.Size(130, 25);
             this.lblGuvenlik.TabIndex = 5;
             this.lblGuvenlik.Text = "0.0 %";
             this.lblGuvenlik.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // progressGuvenlik
             // 
-            this.progressGuvenlik.Location = new System.Drawing.Point(24, 160);
+            this.progressGuvenlik.Location = new System.Drawing.Point(19, 125);
             this.progressGuvenlik.Name = "progressGuvenlik";
-            this.progressGuvenlik.Size = new System.Drawing.Size(376, 23);
+            this.progressGuvenlik.Size = new System.Drawing.Size(361, 15);
             this.progressGuvenlik.TabIndex = 6;
             // 
             // lblGucBaslik
             // 
             this.lblGucBaslik.AutoSize = true;
-            this.lblGucBaslik.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblGucBaslik.Location = new System.Drawing.Point(20, 200);
+            this.lblGucBaslik.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGucBaslik.Location = new System.Drawing.Point(15, 155);
             this.lblGucBaslik.Name = "lblGucBaslik";
-            this.lblGucBaslik.Size = new System.Drawing.Size(86, 20);
+            this.lblGucBaslik.Size = new System.Drawing.Size(78, 19);
             this.lblGucBaslik.TabIndex = 7;
             this.lblGucBaslik.Text = "Anlık Güç:";
             // 
             // lblAnlikGuc
             // 
-            this.lblAnlikGuc.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAnlikGuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAnlikGuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
-            this.lblAnlikGuc.Location = new System.Drawing.Point(230, 195);
+            this.lblAnlikGuc.Location = new System.Drawing.Point(250, 152);
             this.lblAnlikGuc.Name = "lblAnlikGuc";
-            this.lblAnlikGuc.Size = new System.Drawing.Size(170, 30);
+            this.lblAnlikGuc.Size = new System.Drawing.Size(130, 25);
             this.lblAnlikGuc.TabIndex = 8;
             this.lblAnlikGuc.Text = "0.00 kW";
             this.lblAnlikGuc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // progressGuc
             // 
-            this.progressGuc.Location = new System.Drawing.Point(24, 230);
+            this.progressGuc.Location = new System.Drawing.Point(19, 180);
             this.progressGuc.Name = "progressGuc";
-            this.progressGuc.Size = new System.Drawing.Size(376, 23);
+            this.progressGuc.Size = new System.Drawing.Size(361, 15);
             this.progressGuc.TabIndex = 9;
             // 
             // panelIstatistik
@@ -325,21 +325,21 @@
             this.panelIstatistik.Controls.Add(this.lblVerimlilik);
             this.panelIstatistik.Controls.Add(this.lblDurumBaslik);
             this.panelIstatistik.Controls.Add(this.lblDurum);
-            this.panelIstatistik.Location = new System.Drawing.Point(800, 100);
+            this.panelIstatistik.Location = new System.Drawing.Point(740, 90);
             this.panelIstatistik.Name = "panelIstatistik";
-            this.panelIstatistik.Size = new System.Drawing.Size(580, 280);
+            this.panelIstatistik.Size = new System.Drawing.Size(640, 230);
             this.panelIstatistik.TabIndex = 3;
             // 
             // lblIstatistikBaslik
             // 
             this.lblIstatistikBaslik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
             this.lblIstatistikBaslik.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblIstatistikBaslik.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblIstatistikBaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblIstatistikBaslik.ForeColor = System.Drawing.Color.White;
             this.lblIstatistikBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblIstatistikBaslik.Name = "lblIstatistikBaslik";
             this.lblIstatistikBaslik.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lblIstatistikBaslik.Size = new System.Drawing.Size(578, 45);
+            this.lblIstatistikBaslik.Size = new System.Drawing.Size(638, 35);
             this.lblIstatistikBaslik.TabIndex = 0;
             this.lblIstatistikBaslik.Text = "İSTATİSTİKLER";
             this.lblIstatistikBaslik.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -347,20 +347,20 @@
             // lblToplamEnerjiBaslik
             // 
             this.lblToplamEnerjiBaslik.AutoSize = true;
-            this.lblToplamEnerjiBaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblToplamEnerjiBaslik.Location = new System.Drawing.Point(20, 65);
+            this.lblToplamEnerjiBaslik.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblToplamEnerjiBaslik.Location = new System.Drawing.Point(20, 50);
             this.lblToplamEnerjiBaslik.Name = "lblToplamEnerjiBaslik";
-            this.lblToplamEnerjiBaslik.Size = new System.Drawing.Size(118, 21);
+            this.lblToplamEnerjiBaslik.Size = new System.Drawing.Size(111, 20);
             this.lblToplamEnerjiBaslik.TabIndex = 1;
             this.lblToplamEnerjiBaslik.Text = "Toplam Enerji:";
             // 
             // lblToplamEnerji
             // 
-            this.lblToplamEnerji.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblToplamEnerji.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblToplamEnerji.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.lblToplamEnerji.Location = new System.Drawing.Point(320, 60);
+            this.lblToplamEnerji.Location = new System.Drawing.Point(350, 45);
             this.lblToplamEnerji.Name = "lblToplamEnerji";
-            this.lblToplamEnerji.Size = new System.Drawing.Size(240, 32);
+            this.lblToplamEnerji.Size = new System.Drawing.Size(270, 30);
             this.lblToplamEnerji.TabIndex = 2;
             this.lblToplamEnerji.Text = "0.000 kWh";
             this.lblToplamEnerji.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -368,20 +368,20 @@
             // lblCalismaZamaniBaslik
             // 
             this.lblCalismaZamaniBaslik.AutoSize = true;
-            this.lblCalismaZamaniBaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCalismaZamaniBaslik.Location = new System.Drawing.Point(20, 115);
+            this.lblCalismaZamaniBaslik.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCalismaZamaniBaslik.Location = new System.Drawing.Point(20, 90);
             this.lblCalismaZamaniBaslik.Name = "lblCalismaZamaniBaslik";
-            this.lblCalismaZamaniBaslik.Size = new System.Drawing.Size(135, 21);
+            this.lblCalismaZamaniBaslik.Size = new System.Drawing.Size(126, 20);
             this.lblCalismaZamaniBaslik.TabIndex = 3;
             this.lblCalismaZamaniBaslik.Text = "Çalışma Zamanı:";
             // 
             // lblCalismaZamani
             // 
-            this.lblCalismaZamani.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCalismaZamani.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblCalismaZamani.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.lblCalismaZamani.Location = new System.Drawing.Point(320, 110);
+            this.lblCalismaZamani.Location = new System.Drawing.Point(350, 85);
             this.lblCalismaZamani.Name = "lblCalismaZamani";
-            this.lblCalismaZamani.Size = new System.Drawing.Size(240, 32);
+            this.lblCalismaZamani.Size = new System.Drawing.Size(270, 30);
             this.lblCalismaZamani.TabIndex = 4;
             this.lblCalismaZamani.Text = "00:00:00";
             this.lblCalismaZamani.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -389,20 +389,20 @@
             // lblVerimlilikBaslik
             // 
             this.lblVerimlilikBaslik.AutoSize = true;
-            this.lblVerimlilikBaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblVerimlilikBaslik.Location = new System.Drawing.Point(20, 165);
+            this.lblVerimlilikBaslik.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblVerimlilikBaslik.Location = new System.Drawing.Point(20, 130);
             this.lblVerimlilikBaslik.Name = "lblVerimlilikBaslik";
-            this.lblVerimlilikBaslik.Size = new System.Drawing.Size(88, 21);
+            this.lblVerimlilikBaslik.Size = new System.Drawing.Size(84, 20);
             this.lblVerimlilikBaslik.TabIndex = 5;
             this.lblVerimlilikBaslik.Text = "Verimlilik:";
             // 
             // lblVerimlilik
             // 
-            this.lblVerimlilik.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblVerimlilik.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblVerimlilik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
-            this.lblVerimlilik.Location = new System.Drawing.Point(320, 160);
+            this.lblVerimlilik.Location = new System.Drawing.Point(350, 125);
             this.lblVerimlilik.Name = "lblVerimlilik";
-            this.lblVerimlilik.Size = new System.Drawing.Size(240, 32);
+            this.lblVerimlilik.Size = new System.Drawing.Size(270, 30);
             this.lblVerimlilik.TabIndex = 6;
             this.lblVerimlilik.Text = "0.0 %";
             this.lblVerimlilik.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -410,20 +410,20 @@
             // lblDurumBaslik
             // 
             this.lblDurumBaslik.AutoSize = true;
-            this.lblDurumBaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDurumBaslik.Location = new System.Drawing.Point(20, 215);
+            this.lblDurumBaslik.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurumBaslik.Location = new System.Drawing.Point(20, 170);
             this.lblDurumBaslik.Name = "lblDurumBaslik";
-            this.lblDurumBaslik.Size = new System.Drawing.Size(116, 21);
+            this.lblDurumBaslik.Size = new System.Drawing.Size(111, 20);
             this.lblDurumBaslik.TabIndex = 7;
             this.lblDurumBaslik.Text = "Sistem Durum:";
             // 
             // lblDurum
             // 
-            this.lblDurum.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDurum.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblDurum.ForeColor = System.Drawing.Color.Green;
-            this.lblDurum.Location = new System.Drawing.Point(320, 210);
+            this.lblDurum.Location = new System.Drawing.Point(350, 165);
             this.lblDurum.Name = "lblDurum";
-            this.lblDurum.Size = new System.Drawing.Size(240, 32);
+            this.lblDurum.Size = new System.Drawing.Size(270, 30);
             this.lblDurum.TabIndex = 8;
             this.lblDurum.Text = "Bekleniyor";
             this.lblDurum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -433,9 +433,9 @@
             this.panelGrafik.BackColor = System.Drawing.Color.White;
             this.panelGrafik.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelGrafik.Controls.Add(this.lblGrafikBaslik);
-            this.panelGrafik.Location = new System.Drawing.Point(20, 400);
+            this.panelGrafik.Location = new System.Drawing.Point(20, 330);
             this.panelGrafik.Name = "panelGrafik";
-            this.panelGrafik.Size = new System.Drawing.Size(900, 320);
+            this.panelGrafik.Size = new System.Drawing.Size(1040, 400);
             this.panelGrafik.TabIndex = 4;
             this.panelGrafik.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelGrafik_Paint);
             // 
@@ -448,7 +448,7 @@
             this.lblGrafikBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblGrafikBaslik.Name = "lblGrafikBaslik";
             this.lblGrafikBaslik.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lblGrafikBaslik.Size = new System.Drawing.Size(898, 45);
+            this.lblGrafikBaslik.Size = new System.Drawing.Size(1038, 45);
             this.lblGrafikBaslik.TabIndex = 0;
             this.lblGrafikBaslik.Text = "GERÇEK ZAMANLI GRAFİK";
             this.lblGrafikBaslik.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -459,9 +459,9 @@
             this.panelLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLog.Controls.Add(this.lblLogBaslik);
             this.panelLog.Controls.Add(this.listBoxLog);
-            this.panelLog.Location = new System.Drawing.Point(940, 400);
+            this.panelLog.Location = new System.Drawing.Point(1080, 330);
             this.panelLog.Name = "panelLog";
-            this.panelLog.Size = new System.Drawing.Size(440, 320);
+            this.panelLog.Size = new System.Drawing.Size(300, 400);
             this.panelLog.TabIndex = 5;
             // 
             // lblLogBaslik
@@ -473,7 +473,7 @@
             this.lblLogBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblLogBaslik.Name = "lblLogBaslik";
             this.lblLogBaslik.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lblLogBaslik.Size = new System.Drawing.Size(438, 45);
+            this.lblLogBaslik.Size = new System.Drawing.Size(298, 45);
             this.lblLogBaslik.TabIndex = 0;
             this.lblLogBaslik.Text = "SİSTEM KAYITLARI";
             this.lblLogBaslik.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -485,7 +485,7 @@
             this.listBoxLog.ItemHeight = 14;
             this.listBoxLog.Location = new System.Drawing.Point(10, 55);
             this.listBoxLog.Name = "listBoxLog";
-            this.listBoxLog.Size = new System.Drawing.Size(418, 256);
+            this.listBoxLog.Size = new System.Drawing.Size(278, 326);
             this.listBoxLog.TabIndex = 1;
             // 
             // panelKontrol
