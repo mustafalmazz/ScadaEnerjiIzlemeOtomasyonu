@@ -185,14 +185,11 @@ namespace ScadaEnerjiIzlemeOtomasyonu
         // --- TEST VERİSİ ÜRETEN METOD (Gerçekçi Panel Değerlerine Göre Güncellendi) ---
         private void GenerateTestData()
         {
-            // Güneş (200 - 1000 W/m² arasında rastgele)
-            sonGelenGunes = 200 + random.NextDouble() * 800;
+            sonGelenGunes = 600;
 
-            // Voltaj (Panel MPPT Voltajı civarında: 28V - 38V arasında rastgele)
-            sonGelenVolt = 28 + random.NextDouble() * 10;
+            sonGelenVolt = 34;
 
-            // Akım (Panel MPPT Akımı civarında: 3A - 9A arasında rastgele)
-            sonGelenAkim = 3 + random.NextDouble() * 6;
+            sonGelenAkim = 8;
         }
         // --- TEST VERİSİ ÜRETEN METOD SONU ---
 
@@ -210,14 +207,6 @@ namespace ScadaEnerjiIzlemeOtomasyonu
                 if ((DateTime.Now - sonGercekVeriZamani).TotalSeconds > TEST_VERISI_BEKLEME_SANIYE)
                 {
                     GenerateTestData();
-                    // Log mesajını tekrar kontrol etmeye gerek yok, GenerateTestData'dan sonra UpdateUI çağrılıyor.
-                    LogMesaj("UYARI: Gerçek veri gelmiyor! Test verisi kullanılıyor.", Color.Purple);
-                }
-                else
-                {
-                    // Log mesajını tekrar kontrol et ve gerçek veriyi logla
-                    // Sadece veri geldiğinde loglanması daha mantıklı (ParseData'da yapılıyor), burayı log spam'ini azaltmak için pasif bırakıyoruz
-                    // LogMesaj("Gerçek veri geliyor.", Color.Black); 
                 }
             }
             // --- TEST VERİSİ KONTROLÜ VE ÜRETİMİ SONU ---
@@ -311,10 +300,24 @@ namespace ScadaEnerjiIzlemeOtomasyonu
             lblToplamEnerji.Text = $"{toplamEnerji:F4} kWh";
             lblSonGuncelleme.Text = $"Veri: {DateTime.Now:HH:mm:ss}";
 
+            // --- ANLIK VERİLER PANELİNDEKİ YENİ ALANLAR GÜNCELLENİYOR ---
+            // Toplam Süre
+            TimeSpan toplamTs = TimeSpan.FromSeconds(calismaZamani);
+            lblToplamSure.Text = $"{toplamTs.Hours:D2}:{toplamTs.Minutes:D2}:{toplamTs.Seconds:D2}";
+
+            // Toplam Enerji (Anlık Veriler Paneli için)
+            lblToplamEnerjiVeriler.Text = $"{toplamEnerji:F3} kWh";
+
+            // Verimlilik (Anlık Veriler Paneli için)
+            lblVerimlilikVeriler.Text = $"{verimlilik:F1} %";
+            lblVerimlilikVeriler.ForeColor = verimlilik > 15 ? Color.FromArgb(255, 193, 7) :
+                                             verimlilik > 10 ? Color.Orange : Color.Red;
+            // --- ANLIK VERİLER PANELİNDEKİ YENİ ALANLAR GÜNCELLENDİ ---
+
             UpdateSystemDurum(verimlilik, uretilenGuc);
 
-            // Log Kaydı (Detaylı loglama için)
-            // LogMesaj($"G:{sonGelenGunes:F0} V:{voltajGoster:F1} A:{akimGoster:F1}", Color.Black);
+            // Log Kaydı - Saniye saniye okunan değerler
+            LogMesaj($"G:{sonGelenGunes:F0} W/m² V:{voltajGoster:F1} V A:{akimGoster:F1} A", Color.Black);
 
             // Grafiğe Ekle
             AddChartData(sonGelenGunes, voltajGoster, akimGoster);
@@ -475,10 +478,10 @@ namespace ScadaEnerjiIzlemeOtomasyonu
             sf.LineAlignment = StringAlignment.Center;
 
             // Sol dikey yazı (90 derece döndürülmüş)
-            g.TranslateTransform(15, topMargin + chartHeight / 2);
-            g.RotateTransform(-90);
-            g.DrawString("Güneş Işınımı (W/m²)", axisLabelFont, Brushes.Blue, 0, 0, sf);
-            g.ResetTransform();
+            //g.TranslateTransform(15, topMargin + chartHeight / 2);
+            //g.RotateTransform(-90);
+            //g.DrawString("Güneş Işınımı (W/m²)", axisLabelFont, Brushes.Blue, 0, 0, sf);
+            //g.ResetTransform();
 
             // Sağ dikey yazı (90 derece döndürülmüş)
             g.TranslateTransform(leftMargin + chartWidth + 70, topMargin + chartHeight / 2);
@@ -517,16 +520,6 @@ namespace ScadaEnerjiIzlemeOtomasyonu
         {
             if (listBoxLog.InvokeRequired) { this.Invoke((MethodInvoker)delegate { LogMesaj(msj, renk); }); return; }
 
-            // Eğer son mesaj aynıysa (gerçek veri/test verisi durumu) tekrar eklemesin
-            if (listBoxLog.Items.Count > 0)
-            {
-                string sonItem = listBoxLog.Items[0].ToString();
-                if (msj.Contains("Test verisi kullanılıyor.") && sonItem.Contains("Test verisi kullanılıyor."))
-                    return;
-                if (msj.Contains("Gerçek veri geliyor.") && sonItem.Contains("Gerçek veri geliyor."))
-                    return;
-            }
-
             listBoxLog.Items.Insert(0, $"[{DateTime.Now:HH:mm:ss}] {msj}");
             if (listBoxLog.Items.Count > 50) listBoxLog.Items.RemoveAt(listBoxLog.Items.Count - 1);
         }
@@ -556,11 +549,23 @@ namespace ScadaEnerjiIzlemeOtomasyonu
                 string tamYol = System.IO.Path.Combine(masaustuYolu, dosyaAdi);
 
                 System.Text.StringBuilder rapor = new System.Text.StringBuilder();
-                rapor.AppendLine("SCADA RAPORU");
-                rapor.AppendLine($"Tarih: {DateTime.Now}");
-                rapor.AppendLine($"Güneş: {lblRuzgarHizi.Text}");
-                rapor.AppendLine($"Voltaj: {lblGuvenlik.Text}");
-                rapor.AppendLine($"Akım: {lblAnlikGuc.Text}");
+                rapor.AppendLine("========================================");
+                rapor.AppendLine("      SCADA ENERJİ İZLEME RAPORU");
+                rapor.AppendLine("========================================");
+                rapor.AppendLine($"Rapor Tarihi: {DateTime.Now:dd.MM.yyyy HH:mm:ss}");
+                rapor.AppendLine("========================================");
+                rapor.AppendLine("");
+                rapor.AppendLine("ANLIK DEĞERLER:");
+                rapor.AppendLine($"  • Güneş Işınımı  : {sonGelenGunes:F2} W/m²");
+                rapor.AppendLine($"  • Panel Voltajı  : {sonGelenVolt:F2} V");
+                rapor.AppendLine($"  • Panel Akımı    : {sonGelenAkim:F2} A");
+                rapor.AppendLine("");
+                rapor.AppendLine("İSTATİSTİKLER:");
+                rapor.AppendLine($"  • Toplam Enerji  : {toplamEnerji:F4} kWh");
+                rapor.AppendLine($"  • Çalışma Süresi : {lblCalismaZamani.Text}");
+                rapor.AppendLine($"  • Verimlilik     : {lblVerimlilik.Text}");
+                rapor.AppendLine("");
+                rapor.AppendLine("========================================");
 
                 System.IO.File.WriteAllText(tamYol, rapor.ToString(), System.Text.Encoding.UTF8);
                 MessageBox.Show("Rapor kaydedildi: " + tamYol);
