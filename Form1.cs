@@ -477,11 +477,7 @@ namespace ScadaEnerjiIzlemeOtomasyonu
             sf.Alignment = StringAlignment.Center;
             sf.LineAlignment = StringAlignment.Center;
 
-            // Sol dikey yazı (90 derece döndürülmüş)
-            //g.TranslateTransform(15, topMargin + chartHeight / 2);
-            //g.RotateTransform(-90);
-            //g.DrawString("Güneş Işınımı (W/m²)", axisLabelFont, Brushes.Blue, 0, 0, sf);
-            //g.ResetTransform();
+         
 
             // Sağ dikey yazı (90 derece döndürülmüş)
             g.TranslateTransform(leftMargin + chartWidth + 70, topMargin + chartHeight / 2);
